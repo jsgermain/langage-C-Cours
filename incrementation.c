@@ -2,14 +2,14 @@
 
 int main()
 {
-    int compteur=0;
+    int compteur=10;
 
     //printf("%d \n", compteur);
 
-    printf("%d\n", compteur++);
+    printf("%d\n", compteur--);
 
-    printf("%d\n", compteur++);
+    printf("%d\n", compteur--);
 
-    printf("%d\n", compteur++);
+    printf("%d\n", compteur--);
 
 }
