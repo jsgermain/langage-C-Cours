@@ -2,8 +2,8 @@
 
 int main()
 {
-    int compteur;
+    int compteur=1; // sans initialiser
 
-    for(compteur=1; compteur<=10; compteur++)
+    for(; compteur<=10; compteur++)
     printf("Compteur = %d \n", compteur);
 }
