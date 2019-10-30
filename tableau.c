@@ -6,7 +6,7 @@ int main()
     
     printf("Les departements de l'IDF sont :\n");
     
-    for(int i=0; i<6; i++)
+    for(int i=5; i>=0; i--)
     {
         printf("En position %d, on trouve le departement du %d \n", i, region[i]);
     }
