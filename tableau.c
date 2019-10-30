@@ -2,14 +2,12 @@
 
 int main()
 {
-    // Déclaration d'un tableau
-    char notes[4]={'j','o','h','n'};
-
-// affichage des éléments du tableau
-    printf("Les elements du tableau sont :\n");
-
-    printf("En position[0] = %c \n", notes[0]);
-    printf("En position[1] = %c \n", notes[1]);
-    printf("En position[2] = %c \n", notes[2]);
-    printf("En position[3] = %c \n", notes[3]);
+    int region[6]={77,75,95,91,92,93};
+    
+    printf("Les departements de l'IDF sont :\n");
+    
+    for(int i=0; i<6; i++)
+    {
+        printf("En position %d, on trouve le departement du %d \n", i, region[i]);
+    }
 }
