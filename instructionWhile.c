@@ -4,19 +4,13 @@ int main()
 {
     int compteur=1;
 
-    printf("compteur = %d \n", compteur); 
+    while(compteur<=5)
+    {
+        printf("compteur = %d \n", compteur);  
+        compteur++;
+    }
     
-    compteur++;
-    printf("compteur = %d \n", compteur); 
     
-    compteur++;
-    printf("compteur = %d \n", compteur); 
-    
-    compteur++;
-    printf("compteur = %d \n", compteur); 
-    
-    compteur++;
-    printf("compteur = %d \n", compteur); 
 
 
 }
