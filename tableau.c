@@ -1,26 +1,25 @@
 #include<stdio.h>
 /*
-remplir un tableau trouver la valeur maximale du tableau et l'afficher
+Tableau de deux dimensions
 */
 int main()
 {
-    // on déclare les variables
-    int t[6]; //le tableau
-    int i; // l'indice
-    int max; // contiendra la valeur max du tableau
-
-// la 1ère boucle permet de remplir le tableau 
-    for(i=0; i<6; i++)
+    int tab[6][3]=
     {
-        printf("t[%d] => ", i); //t[%d] permet d'afficher le tableau et l'indice, i prend la valeur
-        scanf("%d", &t[i]);
-    }
-// la 2ème boucle parcours le tableau pour trouver la valeur max
-    for(max=t[0], i=1; i<6; i++)
-    {
-        if(max < t[i])
-            max = t[i];
-    }
+        {5,9,88},
+        {7,11,92},
+        {13,4,10},
+        {5,1,14},
+        {30,12,15},
+        {22,6,19}
+    };
+    int ligne, colonne;
 
-    printf(" La valeur maximum du tableau est : %d", max);
+    for(ligne=0; ligne<6; ligne++)
+    {
+        for(colonne=0; colonne<3; colonne++)
+        {
+            printf("tab[%d][%d] %d \n", ligne, colonne, tab[ligne][colonne]);
+        }
+    }
 }
