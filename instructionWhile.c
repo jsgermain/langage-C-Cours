@@ -1,21 +1,26 @@
 #include<stdio.h>
-/* 
-Un programme permettant aux utilisateur de rentrer leur âge. La valeur doit être comprise entre 0
-et 100. Si oui le programme prend fin, sinon il demande à l'utilisateur de réessayer.
-*/
+// instruction do while
+
+
 int main()
 {
-    int age;
-    
-    printf("Entrer votre age \n");
-    scanf("%d",&age);
-    
+    puts("Ici c'est la boucle do while"); // texte explicatif
+   
+    int nb =1;
 
-    while(age<0 || age>100)
+    do{
+        printf("Compteur = %d \n", nb);
+        nb++;
+    }while(nb<=5);
+
+//--------------------------- l'instruction while -----------------------------------------------------------------
+
+puts("Et ici commence l'intruction de la boucle While"); // texte explicatif
+    int n=1;
+    while(n<=5)
     {
-        printf("Vous avez %d ans,  votre age est incorrect, veuillez reessayer\n", age);
-        scanf("%d", &age);
+        printf("Nombre = %d \n", n);
+        n++;
     }
-    
-    printf("Age correct, vous avez %d ans", age);
+
 }
