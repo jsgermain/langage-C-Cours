@@ -4,9 +4,11 @@ Comprendre les chaines des caractères
 */
 int main()
 {
-    char chaine[30];
-    printf("Entrer une chaine :\n");
-    scanf("%s",chaine); // le caractère de formatage d'une chaine (%s) string
-    
-    printf("La chaine = %s", chaine);
+    char chaine[30] ="Johnes Saint Germain";
+    int i;
+
+    for(i=0; chaine[i]!='\0'; i++) // chaine[i]!='\0', caractère null marque la fin de la chaine 
+    {
+        printf("%c\n", chaine[i]);
+    }
 }
