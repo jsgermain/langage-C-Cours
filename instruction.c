@@ -2,7 +2,6 @@
 
 int main()
 {
-    int compteur=1; // initialiser
-    for(; compteur<=7; compteur++) // ; du fait de l'initialisation
-    printf("7 - %d = %d \n", compteur, 7-compteur);
+    for(float compteur=7; compteur<=49; compteur++) 
+    printf("%.0f /7 = %.2f \n", compteur, compteur/7);
 }
