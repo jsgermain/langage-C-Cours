@@ -1,14 +1,10 @@
 #include<stdio.h>
+#include<string.h>
 /*
-Comprendre les chaines des caractères
+Le nombre d'élément d'une chaine de caractère 
 */
 int main()
 {
     char chaine[30] ="Johnes Saint Germain";
-    int i;
-
-    for(i=0; chaine[i]!='\0'; i++) // chaine[i]!='\0', caractère null marque la fin de la chaine 
-    {
-        printf("%c\n", chaine[i]);
-    }
+    printf("Le nombre d'element de la chaine est %d", strlen(chaine));
 }
