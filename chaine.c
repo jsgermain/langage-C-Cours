@@ -1,14 +1,17 @@
 #include<stdio.h>
 #include<string.h>
 /*
-Modifier la casse d'une chaine de caractère
-strlwr(chaine); Minuscule
-strupr(chaine); Majuscule
+Comparer deux chaines de caractère 
+strcmp(chaine1, chaine2);
+la fonction retourne un resultat entier
+0 => si les deux chaines sont à égalité
+1 => si la chaine1 est supérieur
+-1 => si la chaine1 est inférieur
 */
 int main()
 {
-    char parent1[30] =" Johnes Saint Germain ";
+    printf("La comparaison entre ABC et ABC est %d \n", strcmp("ABC","ABC")); // égalité
+    printf("La comparaison entre ABC et DEF est %d \n", strcmp("ABC","DEF")); // chaine1 est inférieur
+    printf("La comparaison entre DEF et ABC est %d \n", strcmp("DEF","ABC"));// chaine1 est supérieur
 
-    puts(strlwr(parent1)); // parent1 garde sa valeur d'initialisation
-    puts(strupr(parent1)) ; // ici s'affiche les parent1 et 2
 }
