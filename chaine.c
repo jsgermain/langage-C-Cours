@@ -1,15 +1,14 @@
 #include<stdio.h>
 #include<string.h>
 /*
-Ajouter N caractère à une chaine
-strncat(chaine_destination, chaine_source, nombre_caractère);
+Modifier la casse d'une chaine de caractère
+strlwr(chaine); Minuscule
+strupr(chaine); Majuscule
 */
 int main()
 {
     char parent1[30] =" Johnes Saint Germain ";
-    char parent2[30] = ", Norane Jean ";
 
-    puts(parent1); // parent1 garde sa valeur d'initialisation
-    strncat(parent1,parent2, 8); // ici 8 CARACTERE parent2 s'ajoute au parent1
-    puts(parent1) ; // ici s'affiche les parent1 et 2
+    puts(strlwr(parent1)); // parent1 garde sa valeur d'initialisation
+    puts(strupr(parent1)) ; // ici s'affiche les parent1 et 2
 }
